@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <title>Blog</title>
+  </head>
+<body>
+    
+  
+    <style>
+
+body{
+  background-color: #303030;
+}
+    
+    .topnav {
+      overflow: hidden;
+      background-color: black;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: purple;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+
+    
+    <div class="topnav" id="myTopnav" style="width:99vw;">
+      <a href="https://aashvik-jaiswall.github.io/codewithaashvik-homepage/" class="active">Home</a>
+      <a href="https://aashvik-jaiswall.github.io/codewithaashvik-news/">News</a>
+      <a href="https://aashvik-jaiswall.github.io/codewithaashvik-contactme/">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+
+
+<br><br>
+
+
+
+  
+
+<center>
+<div>
+  <img src="with.png" alt="..." class="rounded-circle" style="height: 300px; width: 300px;"><br><br>
+  
+  <p style="color: grey; font-style:italic; font-weight: bold; font-family: sans-serif; font-size: 5vh; overflow: hidden;">A free coding site</p>
+</div>
+
+</center>
+
+
+
+  <!-- <div class="parent_div" style="height:30vh; width: 99vw; position: relative;">
+      <div class="child_div" style=" background-color: #181818; position: absolute; left: 50%; top:50%; height: 20vh; width: 98vw; transform: translate(-50%, -50%); border-radius: 10px; box-shadow: 5px 10px 8px #101010;">
+        <div class="content_div" style=" position: absolute; left: 50%; top:50%; height: fit-content; width: fit-content; transform: translate(-50%, -50%);">
+          <h1 style="color: purple; font-style: italic;  "><b>secret folder</b></h1>
+        </div>
+          
+      </div>
+  </div> -->
+
+<center></center>
+
+
+<div class="example" style="background-color:#181818; color: #303030; margin-left: 20px; margin-right: 20px; border-radius: 10px; box-shadow: 5px 10px 8px #101010; justify-content: center; margin-bottom: 30px;"><center><p style="font-style: italic;"><b>BLOG FOR SECRET FOLDER</b></p></center></div>
+
+<div class="example_2" style="background-color:#181818; margin-left: 20px; margin-right: 20px; border-radius: 10px; box-shadow: 5px 10px 8px #101010; justify-content: center; margin-bottom: 20px;">
+  <center>
+    <h2 style=" text-align-last: left; margin-left: 30px; margin-right: 30px; padding-top: 30px;  color: purple; "><b>Getting Started</b></h2>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-bottom: 20px; color: grey; "><b>In this blog I am going to tell you how to protect any folder in windows without using any additional softwares which someone can only access by entering the correct password of your choice. now inorder to do so you have to follow some steps they are listed below.</b></p>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-bottom: 20px; color: grey; "><b>(1) Select the desired folder that you want to hide. In my case I am selecting the folder named as example and I even stored a file named as secret inside the folder you can store the data that you want.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_1.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(2) Now, just make a new text file inside the folder. I am naming it "securedfolder.txt" . You can name it as per your choice.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_2.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(3) Now, just <a class="link_1" href="https://gist.github.com/pknowledge/1feef32fa21475eb9742ea247aefe1af#file-folderlock-bat" target="blank" style="color:blue; ">Click Here</a> and you be redirected to a github repository in there you have to just copy the code from the repository and paste it into that text file that you just created in the last step.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_3.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(4) Now, just open the file in wich you pasted the code after opening that file move your cursor to line no.21 which is "if NOT %pass%== YOUR-PASSWORD goto FAIL" and replace the "YOUR-PASSWORD" with the password of your choice. In here I have used "examplepass" as my password for now. and save it.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_4.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(5) Now, just again open the file and click on the File option in the top left corner. Click on the Save as button and just change the extension the the file from "securedfolder.txt" to "securedfolder.bat" and save it. At last just delete the "txt" file.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_5.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(6) Now, just double click on the "securedfolder.bat" file and a folder named "Private" will be created automatically.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_6.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(7) Now, just move all the files and folders that you want to hide inside that "Private" folder that was just created in the last step.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_7.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(8) Now, just Again double click on the “LockedFolder.bat” A command prompt window will open asking you that “Are you sure you want to lock this folder?”. Type "Y" and press the enter key. the "private" folder will disappear.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_8.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(9) Now, To access your files again, double click on the "securedfolder.bat" file. A command prompt window will open asking you the password of the secured folder.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_9.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(10) Now, just type the password we created in the step no. 4 and press the enter key . After doing so you will be able to see the "Private" folder again.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_10.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(11) Now, when you will open the "Private" folder you will be able to access your files again.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_11.mp4" loop style="border-radius: 10px;"></video>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-top: 20px; padding-bottom: 20px; color: grey; "><b>(12) Now, inorder to hide your Private folder again, all you need to do is double-click on the “securedfolder.bat” file again and type "Y" and press the enter key. The "Private" folder will be disapperared again.</b></p>
+    <video autoplay controls height="auto" width="90%" src="video_12.mp4" loop style="border-radius: 10px;"></video>
+</center>
+</div>
+
+<div class="example_2" style="background-color:#181818; margin-left: 20px; margin-right: 20px; border-radius: 10px; box-shadow: 5px 10px 8px #101010; justify-content: center; margin-bottom: 20px;">
+  <center>
+    <h2 style=" text-align-last: left; margin-left: 30px; margin-right: 30px; padding-top: 30px;  color: purple; "><b>End</b></h2>
+    <p style=" font-size: 20px; text-align: left; margin-left: 30px; margin-right: 30px;  padding-bottom: 20px; color: grey; "><b>So I hope this blog was informative for you and if you enjoyed this blog do not forget to share this with all of your friends so that they can also use this useful trick to protect their files and folders without using any additional softwares and also do not forget to visit my you tube channel <a  class="link_1"href="https://www.youtube.com/channel/UCY9qN8z7nQGkfrVZ_IIxqLA">Code with Aashvik</a> there I post many informatie videos so please visit it and this is it for now and I will mett you in the next blog.</b></p>
+
+</center>
+</div>
+
+
+<style>
+  div.example {
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+  </style>
+ 
+
+<br><br>
+
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">This website is made by <i>Aashvik jaiswal </i> thsi website focosus to help people with some my youtube videos and has an aim to make everyone aware of computer programming.</p>
+        </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#">Aashvik jaiswal</a>.
+          </p>
+        </div>
+        <button style="background-color: black;"><a href="https://www.instagram.com/_aashvik_/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg></a> </button>
+      <button style="background-color: black;"><a href="https://www.youtube.com/channel/UCY9qN8z7nQGkfrVZ_IIxqLA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+      </svg></a></button>
+      
+</footer>
+
+
+
+
+  </body>
+</html>
